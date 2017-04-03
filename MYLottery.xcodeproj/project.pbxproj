@@ -23,6 +23,13 @@
 		AE32E1A01E8FF8F3008BBB87 /* MZImformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32E19E1E8FF8F3008BBB87 /* MZImformationVC.m */; };
 		AE32E1A11E8FF8F3008BBB87 /* MZImformationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE32E19F1E8FF8F3008BBB87 /* MZImformationVC.xib */; };
 		AE32E1A41E9093B2008BBB87 /* HHTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32E1A31E9093B2008BBB87 /* HHTitleBtn.m */; };
+		AE32E1A71E90A3F3008BBB87 /* HHLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32E1A61E90A3F3008BBB87 /* HHLoginVC.m */; };
+		AE32E1B21E90AAC9008BBB87 /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32E1B11E90AAC9008BBB87 /* UIImage+Tool.m */; };
+		AE32E1B51E91EE56008BBB87 /* MZMyLotterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32E1B41E91EE56008BBB87 /* MZMyLotterVC.m */; };
+		AE32E1B91E91EF62008BBB87 /* MZSetttingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32E1B71E91EF62008BBB87 /* MZSetttingVC.m */; };
+		AE32E1BA1E91EF62008BBB87 /* MZSetttingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE32E1B81E91EF62008BBB87 /* MZSetttingVC.xib */; };
+		AE32E1BE1E91F356008BBB87 /* HHSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32E1BC1E91F356008BBB87 /* HHSettingCell.m */; };
+		AE32E1BF1E91F356008BBB87 /* HHSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE32E1BD1E91F356008BBB87 /* HHSettingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +82,18 @@
 		AE32E19F1E8FF8F3008BBB87 /* MZImformationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MZImformationVC.xib; sourceTree = "<group>"; };
 		AE32E1A21E9093B2008BBB87 /* HHTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTitleBtn.h; sourceTree = "<group>"; };
 		AE32E1A31E9093B2008BBB87 /* HHTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTitleBtn.m; sourceTree = "<group>"; };
+		AE32E1A51E90A3F3008BBB87 /* HHLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLoginVC.h; sourceTree = "<group>"; };
+		AE32E1A61E90A3F3008BBB87 /* HHLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLoginVC.m; sourceTree = "<group>"; };
+		AE32E1B01E90AAC9008BBB87 /* UIImage+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tool.h"; sourceTree = "<group>"; };
+		AE32E1B11E90AAC9008BBB87 /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
+		AE32E1B31E91EE56008BBB87 /* MZMyLotterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZMyLotterVC.h; sourceTree = "<group>"; };
+		AE32E1B41E91EE56008BBB87 /* MZMyLotterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZMyLotterVC.m; sourceTree = "<group>"; };
+		AE32E1B61E91EF62008BBB87 /* MZSetttingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZSetttingVC.h; sourceTree = "<group>"; };
+		AE32E1B71E91EF62008BBB87 /* MZSetttingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZSetttingVC.m; sourceTree = "<group>"; };
+		AE32E1B81E91EF62008BBB87 /* MZSetttingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MZSetttingVC.xib; sourceTree = "<group>"; };
+		AE32E1BB1E91F356008BBB87 /* HHSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSettingCell.h; sourceTree = "<group>"; };
+		AE32E1BC1E91F356008BBB87 /* HHSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSettingCell.m; sourceTree = "<group>"; };
+		AE32E1BD1E91F356008BBB87 /* HHSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHSettingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +188,7 @@
 		AE07DC4E1E8F4EB900EB3AB5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AE32E1A81E90A984008BBB87 /* Other */,
 				AE07DC5B1E8F4EB900EB3AB5 /* Main */,
 				AE07DC4F1E8F4EB900EB3AB5 /* Award */,
 				AE07DC531E8F4EB900EB3AB5 /* Buy */,
@@ -362,6 +382,13 @@
 		AE07DC641E8F4EB900EB3AB5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE32E1A51E90A3F3008BBB87 /* HHLoginVC.h */,
+				AE32E1A61E90A3F3008BBB87 /* HHLoginVC.m */,
+				AE32E1B31E91EE56008BBB87 /* MZMyLotterVC.h */,
+				AE32E1B41E91EE56008BBB87 /* MZMyLotterVC.m */,
+				AE32E1B61E91EF62008BBB87 /* MZSetttingVC.h */,
+				AE32E1B71E91EF62008BBB87 /* MZSetttingVC.m */,
+				AE32E1B81E91EF62008BBB87 /* MZSetttingVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -376,8 +403,28 @@
 		AE07DC661E8F4EB900EB3AB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE32E1BB1E91F356008BBB87 /* HHSettingCell.h */,
+				AE32E1BC1E91F356008BBB87 /* HHSettingCell.m */,
+				AE32E1BD1E91F356008BBB87 /* HHSettingCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AE32E1A81E90A984008BBB87 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AE32E1A91E90A984008BBB87 /* Category */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AE32E1A91E90A984008BBB87 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AE32E1B01E90AAC9008BBB87 /* UIImage+Tool.h */,
+				AE32E1B11E90AAC9008BBB87 /* UIImage+Tool.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,8 +535,10 @@
 			files = (
 				AE07DC281E8F38D600EB3AB5 /* LaunchScreen.storyboard in Resources */,
 				AE32E1A11E8FF8F3008BBB87 /* MZImformationVC.xib in Resources */,
+				AE32E1BF1E91F356008BBB87 /* HHSettingCell.xib in Resources */,
 				AE07DC4C1E8F3D9000EB3AB5 /* Images.xcassets in Resources */,
 				AE07DC231E8F38D600EB3AB5 /* Main.storyboard in Resources */,
+				AE32E1BA1E91EF62008BBB87 /* MZSetttingVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,15 +564,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE07DC6A1E8F55E100EB3AB5 /* HHTabbarVC.m in Sources */,
+				AE32E1BE1E91F356008BBB87 /* HHSettingCell.m in Sources */,
 				AE07DC701E8F638F00EB3AB5 /* HHButton.m in Sources */,
+				AE32E1B51E91EE56008BBB87 /* MZMyLotterVC.m in Sources */,
 				AE07DC6D1E8F563500EB3AB5 /* HHTabbarView.m in Sources */,
+				AE32E1B21E90AAC9008BBB87 /* UIImage+Tool.m in Sources */,
 				AE32E1A01E8FF8F3008BBB87 /* MZImformationVC.m in Sources */,
 				AE32E19C1E8FEFC7008BBB87 /* MZNavigationVC.m in Sources */,
 				AE07DC201E8F38D600EB3AB5 /* ViewController.m in Sources */,
 				AE07DC1D1E8F38D600EB3AB5 /* AppDelegate.m in Sources */,
 				AE32E1A41E9093B2008BBB87 /* HHTitleBtn.m in Sources */,
+				AE32E1A71E90A3F3008BBB87 /* HHLoginVC.m in Sources */,
 				AE07DC1A1E8F38D600EB3AB5 /* main.m in Sources */,
 				AE32E1991E8FEA2F008BBB87 /* MZHallVC.m in Sources */,
+				AE32E1B91E91EF62008BBB87 /* MZSetttingVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

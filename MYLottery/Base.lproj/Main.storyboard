@@ -12,6 +12,7 @@
         <!--TabbarVC-->
         <scene sceneID="8Di-Lu-YH7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHH-aN-aKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="Zr0-vU-XO3" customClass="HHTabbarVC" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ES1-q7-Ob5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -26,13 +27,13 @@
                         <segue destination="vc5-Mo-C1M" kind="relationship" relationship="viewControllers" id="QcE-wU-ztk"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wHH-aN-aKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3401" y="50"/>
         </scene>
         <!--Item-->
         <scene sceneID="RpX-jW-KF9">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COo-mD-DTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="vc5-Mo-C1M" customClass="MZNavigationVC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="xBE-Wy-rcT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="niw-PH-ABf">
@@ -43,14 +44,14 @@
                         <segue destination="YNI-ms-fkn" kind="relationship" relationship="rootViewController" id="dIW-59-jF3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="COo-mD-DTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3401" y="794"/>
         </scene>
         <!--我的彩票-->
         <scene sceneID="5TL-8M-hkY">
             <objects>
-                <viewController id="YNI-ms-fkn" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8K-ac-73D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="YNI-ms-fkn" customClass="MZMyLotterVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0RH-be-LPE"/>
                         <viewControllerLayoutGuide type="bottom" id="mhr-VY-o02"/>
@@ -58,17 +59,51 @@
                     <view key="view" contentMode="scaleToFill" id="kAs-Pd-nD4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="V3o-Eh-tv1">
+                                <rect key="frame" x="10" y="78" width="300" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8Cl-Uv-ae6"/>
+                                    <constraint firstAttribute="height" constant="140" id="H39-zr-7UM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEm-6b-OEx">
+                                <rect key="frame" x="10" y="264" width="300" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                <state key="normal" title="登录"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V3o-Eh-tv1" firstAttribute="top" secondItem="0RH-be-LPE" secondAttribute="bottom" constant="14" id="UKv-UY-AZj"/>
+                            <constraint firstAttribute="trailing" secondItem="V3o-Eh-tv1" secondAttribute="trailing" constant="10" id="v7c-2v-Bsh"/>
+                            <constraint firstItem="V3o-Eh-tv1" firstAttribute="leading" secondItem="kAs-Pd-nD4" secondAttribute="leading" constant="10" id="xI7-1v-T7j"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="我的彩票" id="BiY-eH-lhY"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="BiY-eH-lhY">
+                        <barButtonItem key="rightBarButtonItem" id="8lD-l7-1sN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TlO-ZJ-hqu">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="设置"/>
+                                <connections>
+                                    <action selector="turnToSetting:" destination="YNI-ms-fkn" eventType="touchUpInside" id="dIg-aL-m6B"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnLogin" destination="VEm-6b-OEx" id="Opk-TV-pFd"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a8K-ac-73D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2741" y="794"/>
+            <point key="canvasLocation" x="-2741.25" y="793.30985915492954"/>
         </scene>
         <!--Item-->
         <scene sceneID="5L0-c6-S18">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dca-iT-FVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="wq5-Lo-s6t" customClass="MZNavigationVC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="kif-3o-4Dl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="set-41-Luw">
@@ -79,13 +114,13 @@
                         <segue destination="g8R-nm-dh8" kind="relationship" relationship="rootViewController" id="ZdF-c6-ADk"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dca-iT-FVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1629" y="827"/>
         </scene>
         <!--幸运广场-->
         <scene sceneID="S9l-ff-EKD">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSd-zL-uWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="g8R-nm-dh8" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zer-0n-fk2"/>
@@ -98,7 +133,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="幸运广场" id="eLE-x0-p3B"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QSd-zL-uWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-808" y="826"/>
         </scene>
@@ -122,6 +156,7 @@
         <!--开奖信息-->
         <scene sceneID="1Gn-7X-0gU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqo-eQ-fbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="YLe-GF-HDp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cOy-Dm-H14"/>
@@ -134,7 +169,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="开奖信息" id="1mJ-My-1hP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqo-eQ-fbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-808" y="52"/>
         </scene>
@@ -158,6 +192,7 @@
         <!--View Controller-->
         <scene sceneID="3NN-WG-K2U">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xmJ-uO-8QB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NHx-8k-Lds" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jR5-XA-bJB"/>
@@ -177,7 +212,6 @@
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="YiG-3n-AOh">
-                        <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dbZ-Mz-erq" customClass="HHTitleBtn">
                             <rect key="frame" x="117.5" y="11" width="85" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -186,15 +220,16 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
+                        <barButtonItem key="rightBarButtonItem" image="NavInfoFlat" id="ppz-KF-Lmh"/>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xmJ-uO-8QB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-808.125" y="-698.23943661971828"/>
         </scene>
         <!--NavigationVC-->
         <scene sceneID="NHl-VI-qTN">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8P-yt-kaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="I1m-YN-hsx" customClass="MZNavigationVC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="qeU-AI-3X3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lu6-g1-3bV">
@@ -205,13 +240,13 @@
                         <segue destination="U9E-V4-sk0" kind="relationship" relationship="rootViewController" id="a0W-NF-Vzb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r8P-yt-kaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3401" y="-698"/>
         </scene>
         <!--购彩大厅-->
         <scene sceneID="y2J-8s-SOw">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XKc-xQ-CBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="hall" id="U9E-V4-sk0" customClass="MZHallVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Obf-Cb-ajN"/>
@@ -235,12 +270,13 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XKc-xQ-CBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2728" y="-698"/>
         </scene>
     </scenes>
     <resources>
+        <image name="LoginScreen" width="150" height="70"/>
+        <image name="NavInfoFlat" width="22" height="22"/>
         <image name="YellowDownArrow" width="16" height="16"/>
         <image name="zixunBarFlat" width="13" height="11"/>
     </resources>
